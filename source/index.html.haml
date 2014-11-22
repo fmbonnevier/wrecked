@@ -1,9 +1,19 @@
-%p Brief Explanation
 
-%p Form
+.top-bar.container
+	%section.logo
+		%h1 Wrecked.io
 
-%p Future
+	%nav.nav
+		%ul
+			%li
+				= link_to 'About'
+			%li
+				= link_to 'Contribute'
 
+%main.container
+	%section
+		%h1 About
 
-
-
+	%section
+		%h1 Contribute
+		%button{:type => 'submit'} Get the Form

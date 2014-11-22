@@ -28,11 +28,22 @@
         You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     %header
       %h1= current_page.data.title
+
+
     .main-content{:role => "main"}
       -# Page content gets rendered here
       = yield
 
-      %footer
+    %footer.container
+      %nav
+        %ul
+          %li
+            = link_to 'About'
+          %li
+            = link_to 'Contribute'
+      %section
+        %p About the Author, Picture of me
+        %img
 
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
     :javascript

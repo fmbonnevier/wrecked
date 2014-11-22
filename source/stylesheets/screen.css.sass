@@ -4,6 +4,7 @@
 
 @import "compass"
 @import "h5bp"
+@import "vars"
 
 // HTML5 Boilerplate Styles
 @include h5bp-normalize
@@ -23,4 +24,12 @@
 @include h5bp-media
 
 
-//Begin custom styles
+//Top Navigation
+
+.top-bar
+	background: $primary-background
+	.logo
+		@include span-columns(4 first)
+
+	.nav
+		@include span-columns(8 last)
