@@ -1,9 +1,20 @@
-%p Brief Explanation
 
-%p Form
+.top-bar.container
+	%section.logo
+		%h1 Wrecked.io
 
-%p Future
+	%nav.nav
+		%ul
+			%li
+				= link_to 'About'
+			%li
+				= link_to 'Contribute'
 
-
-
-
+.container{:'data-swap-container' => '' }
+	%section
+		%h1 About
+		%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+	%section
+		%h1 Contribute
+		%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+		%button{:type => 'submit'} Get the Form
