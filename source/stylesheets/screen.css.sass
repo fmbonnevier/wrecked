@@ -1,10 +1,9 @@
 //
 // Main Stylesheet
 //
-
 @import "compass"
 @import "h5bp"
-@import "vars"
+
 
 // HTML5 Boilerplate Styles
 @include h5bp-normalize
@@ -12,7 +11,7 @@
 
 // Susy Grid Systems - choose one to customize
 // @import "grid/fixed"
-@import "grid/magic"
+@import "grid/custom"
 
 // Font Awesome icons
 @import "font-awesome"
@@ -23,13 +22,24 @@
 // Print styles.
 @include h5bp-media
 
-
+//Import variables
+@import "vars"
 //Top Navigation
 
-.top-bar
-	background: $primary-background
-	.logo
-		@include span-columns(4 first)
+main
+	@include container(1140px)
 
+.top-bar
+	@include clearfix
+	background: orange
+	.logo
+		@include span-columns(4)
 	.nav
-		@include span-columns(8 last)
+		@include span-columns(8 omega)
+
+.container
+	
+	text-align: center
+
+.footer
+	background: silver

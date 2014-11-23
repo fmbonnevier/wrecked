@@ -30,11 +30,13 @@
       %h1= current_page.data.title
 
 
-    .main-content{:role => "main"}
+    %main{:role => "main"}
       -# Page content gets rendered here
       = yield
 
-    %footer.container
+      -# = partial :form
+
+    %footer.footer.container
       %nav
         %ul
           %li
