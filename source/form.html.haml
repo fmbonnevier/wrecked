@@ -1,2 +1,18 @@
-%form
-	
+%form.survey
+	.pair
+		%label Intersection:
+		%input{:type => 'text', :id => 'intersection', :name  => 'intersection'}
+	.pair
+		%label Date:
+		%input{:type => 'text', :id => 'date', :name  => 'date'}
+	.pair
+		%label Time:
+		%input{:type => 'text', :id => 'time', :name  => 'time'}
+	.pair
+		%label Years cycling:
+		%input{:type => 'text', :id => 'years_cycling', :name  => 'years_cycling'}
+	.pair
+		%label Type of accident:
+		%input{:type => 'text', :id => 'type_of_accident', :name  => 'type_of_accident'}
+	.pair
+		%input.button-small{:type => 'submit'}

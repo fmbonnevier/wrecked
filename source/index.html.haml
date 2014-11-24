@@ -1,20 +1,10 @@
 
-.top-bar.container
-	%section.logo
-		%h1 Wrecked.io
+%h1 Crash.Data
+%button.top-button{:type => 'submit', :'data-form-button' => ''} Get the Form
 
-	%nav.nav
-		%ul
-			%li
-				= link_to 'About'
-			%li
-				= link_to 'Contribute'
-
-.container{:'data-swap-container' => '' }
+.container.inner-content{:'data-swap-container' => '' }
 	%section
-		%h1 About
-		%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-	%section
-		%h1 Contribute
-		%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-		%button{:type => 'submit'} Get the Form
+		.bubble
+			%h2 Crash Data Collection
+			%p The goal of this project is to collect data about unreported bicycle crashes.  This data will help augment PENNDOT's incomplete reporting.
+			%button.button{:type => 'submit', :'data-form-button' => ''} Submit your crash
