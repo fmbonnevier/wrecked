@@ -26,20 +26,35 @@
 @import "vars"
 //Top Navigation
 
+html
+	background: #5cc1af
+
+header
+	display: none
+
+body
+	font-family: 'Montserrat', sans-serif
+	color: #FFFFFF
+
 main
 	@include container(1140px)
+	h1
+		margin: 0
+		text-indent: -9999px
 
-.top-bar
-	@include clearfix
-	background: orange
-	.logo
-		@include span-columns(4)
-	.nav
-		@include span-columns(8 omega)
+.top-button
+	display: none
 
-.container
-	
+.inner-content
 	text-align: center
+	.content
+		width: 85%
+		min-width: 300px
+		padding: 0px 50px
+		display: inline-block
+		border: 2px solid #FFFFFF
+		border-radius: 10px
+
+
 
 .footer
-	background: silver
